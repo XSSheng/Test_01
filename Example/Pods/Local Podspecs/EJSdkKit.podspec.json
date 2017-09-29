@@ -1,0 +1,22 @@
+{
+  "name": "EJSdkKit",
+  "version": "0.1.0",
+  "summary": "A short description of EJSdkKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/XSSheng/EJSdkKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "XSSheng": "986852522@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/XSSheng/EJSdkKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EJSdkKit/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module EJSdkKit {
+  umbrella header "EJSdkKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

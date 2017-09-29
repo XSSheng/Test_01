@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EJSdkKit_Example' do
+  pod 'EJSdkKit', :path => '../'
+
+  target 'EJSdkKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Kiwi'
+  end
+end
