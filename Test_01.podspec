@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "Test_01"
-s.version          = "1.0.0"
+s.version          = "1.0.2"
 s.summary          = "Custom Category used on iOS."
 s.description      = <<-DESC
 Custom Category used on iOS, which implement by Objective-C.
@@ -14,6 +14,8 @@ s.requires_arc     = true
 
 # UIView 和 EasyLog 在工程中以子目录显示
 s.source_files  = 'Classes'
+s.source_files  = 'Framework'
+ s.vendored_frameworks = 'EJ_CYSdk.framework'
 
 end
 
