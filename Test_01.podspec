@@ -14,8 +14,9 @@ s.requires_arc     = true
 
 # UIView 和 EasyLog 在工程中以子目录显示
 s.source_files  = 'Classes'
-s.source_files  = 'Framework'
- s.vendored_frameworks = 'EJ_CYSdk.framework'
-
+# s.source_files  = 'Framework'
+ s.vendored_frameworks = 'Framework/CYSDKKit.framework'
+s.frameworks = 'Security', 'CoreLocation', 'CoreTelephony', 'WebKit'
+ s.library =  "sqlite3"
 end
 

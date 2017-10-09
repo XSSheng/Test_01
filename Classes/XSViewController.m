@@ -7,7 +7,7 @@
 //
 
 #import "XSViewController.h"
-#import <EJSdkKit-Prefix.pch>
+//#import <EJSdkKit-Prefix.pch>
 @interface XSViewController ()
 
 @end
