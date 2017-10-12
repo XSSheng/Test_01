@@ -1,0 +1,6 @@
+framework module CYSDKKit {
+  umbrella header "CYSDKKit.h"
+
+  export *
+  module * { export * }
+}
