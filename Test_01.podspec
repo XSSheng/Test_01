@@ -7,7 +7,7 @@ Custom Category used on iOS, which implement by Objective-C.
 DESC
 s.homepage         = "https://github.com/XSSheng/Test_01"
 s.license          = 'MIT'
-s.author           = { "xusheng" => "xusheng@986852522.com" }
+s.author           = { "XSSheng" => "xusheng@986852522.com" }
 s.platform         = :ios, '7.0'
 s.source           = { :git => "https://github.com/XSSheng/Test_01.git", :tag => s.version }
 s.requires_arc     = true
