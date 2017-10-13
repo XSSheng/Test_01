@@ -17,6 +17,6 @@ s.requires_arc     = true
 # s.source_files  = 'Framework'
  s.vendored_frameworks = 'Framework/CYSDKKit.framework'
 s.frameworks = 'Security', 'CoreLocation', 'CoreTelephony', 'WebKit'
- s.library =  "sqlite3"
+ s.library =  "sqlite3","libz"
 end
 

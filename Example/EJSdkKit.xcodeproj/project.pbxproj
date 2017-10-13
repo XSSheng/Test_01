@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		750961461F90A5BD005C8163 /* CYSDKKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750961451F90A5BD005C8163 /* CYSDKKit.framework */; };
 		75D0E3D61F7DEE900051203F /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D0E3D31F7DEE900051203F /* ReplaceMe.m */; };
 		75D0E3D71F7DEE900051203F /* XSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D0E3D51F7DEE900051203F /* XSViewController.m */; };
 		75D0E3DB1F7DEEAF0051203F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 75D0E3D81F7DEEAE0051203F /* LICENSE */; };
@@ -63,6 +64,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		750961451F90A5BD005C8163 /* CYSDKKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CYSDKKit.framework; path = ../Framework/CYSDKKit.framework; sourceTree = "<group>"; };
 		75D0E3D31F7DEE900051203F /* ReplaceMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ../../Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		75D0E3D41F7DEE900051203F /* XSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XSViewController.h; path = ../../Classes/XSViewController.h; sourceTree = "<group>"; };
 		75D0E3D51F7DEE900051203F /* XSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XSViewController.m; path = ../../Classes/XSViewController.m; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				750961461F90A5BD005C8163 /* CYSDKKit.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -135,6 +138,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				750961451F90A5BD005C8163 /* CYSDKKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -573,6 +577,12 @@
 				INFOPLIST_FILE = "EJSdkKit/EJSdkKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"EJSdkKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -589,6 +599,12 @@
 				INFOPLIST_FILE = "EJSdkKit/EJSdkKit-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"EJSdkKit\"",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
